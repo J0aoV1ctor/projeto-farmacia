@@ -1,2 +1,2 @@
 # projeto-farmacia
-repositorio para o site de farmacia 
+Repositorio Para o site de farmacia
