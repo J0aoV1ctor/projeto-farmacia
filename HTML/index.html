@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Online</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="Back.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Insira o nome da sua Drogaria</h1>
+        <div id="carrinho">
+            <button onclick="mostrarCarrinho()">Carrinho (<span id="carrinho-count">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="produtos">
+
+            <h2>Produtos</h2>
+            <div class="produto">
+                <img src="/CSS/images/paracetamol.jpeg" alt="Medicamento 1">
+                <h3>Paracetamol</h3>
+                <p>R$ 10,00</p>
+                <button onclick="adicionarAoCarrinho('Paracetamol', 10)">Adicionar ao Carrinho</button>
+            </div>
+     
+            
+            <div class="produto">
+                <img src="/CSS/images/ibuprofeno.jpeg" alt="Medicamento 2">
+                <h3>Ibuprofeno</h3>
+                <p>R$ 15,00</p>
+                <button onclick="adicionarAoCarrinho('Ibuprofeno', 15)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="/CSS//images/dipirona.jpeg" alt="Medicamento 3">
+                <h3>Dipirona</h3>
+                <p>R$ 12,00</p>
+                <button onclick="adicionarAoCarrinho('Dipirona', 12)">Adicionar ao Carrinho</button>
+            </div>
+        </section>        
+        </main>
+
+        <main>
+        <selection id="produtos">
+
+            <div class="produto">
+                <img src="/CSS/images/paracetamol.jpeg" alt="Medicamento 1">
+                <h3>Nimesulida</h3>
+                <p>R$ 15,00</p>
+                <button onclick="adicionarAoCarrinho('Paracetamol', 10)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="/CSS/images/paracetamol.jpeg" alt="Medicamento 1">
+                <h3>Nimesulida</h3>
+                <p>R$ 13,00</p>
+                <button onclick="adicionarAoCarrinho('Paracetamol', 10)">Adicionar ao Carrinho</button>
+            </div>
+
+
+            <div class="produto">
+                <img src="/CSS/images/paracetamol.jpeg" alt="Medicamento 1">
+                <h3>Nimesulida</h3>
+                <p>R$ 45,00</p>
+                <button onclick="adicionarAoCarrinho('Paracetamol', 10)">Adicionar ao Carrinho</button>
+            </div>
+        </selection>
+        </main>
+
+
+    <div id="carrinho-modal" class="carrinho-modal">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho"></ul>
+        <p id="total">Total: R$ 0,00</p>
+        <button onclick="fecharCarrinho()">Fechar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
